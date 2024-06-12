@@ -3,7 +3,7 @@ import sys
 
 from setuptools import find_packages, setup
 
-VERSION = '0.2.4-dev'
+VERSION = '0.2.5'
 AIO_COMPATIBLE = sys.version_info >= (3, 5, 3)
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
@@ -27,7 +27,7 @@ else:
     EXCLUDED_PACKAGES.append('keycloak.aio')
 
 setup(
-    name='python-keycloak-client',
+    name='python3-keycloak22-client',
     version=VERSION,
     long_description=README,
     package_dir={'': 'src'},
@@ -50,7 +50,7 @@ setup(
     ],
     install_requires=[
         'requests',
-        'python-jose',
+        'python3-jose-kc22',
     ],
     tests_require=TESTS_REQUIRE,
     url='https://github.com/Peter-Slump/python-keycloak-client',
